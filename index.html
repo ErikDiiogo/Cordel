@@ -5,23 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cordel Moderno</title>
     <style>
-        body{
-            background-color: blue;
+        *{
+            margin: 0px;
+            padding: 0px;
         }
+
+        html, body{
+            min-height: 100vh;
+            background-color: darkgray;
+        }
+
         header{
-            background-color:red ;
-        }
-        h1{
+            background-color:black;
             color: white;
-            text-align: center;
         }
-        p.ex1{
+
+        header > h1{
+        padding-top: 50px;
+        font-variant: small-caps;
+        }
+
+        header > p{
+        padding-bottom: 50px;   
+        }
+
+        a{
             color: white;
-            text-align: center;
+            text-decoration: none;
+            font-weight: bolder;
         }
+
+        a:hover{
+        text-decoration: underline;
+        }
+
         section{
-            background-color: black;
-            color: white;
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+        line-height: 2em;
+        padding-left: 30px;
+        }
+
+        section.normal{
+            background-color: white;
+            color: black;
+        }
+
+        section.image > {
+        background-color: rgba(0, 0, 0, 0.253);
+        }
+
+        section.imagem{
+        color: white;
+        background-image: url('/background001.jpg');
+        }
+        footer{
+        background-color: black;
+       color: white;
+        text-align: center;
+        padding: 10px;
         }
     </style>
 </head>
@@ -32,12 +74,12 @@
         Cordel Moderno
     </h1>
 
-    <p class="ex1">
+    <p>
     Por <a href="https://www.recantodasletras.com.br/poesias/3186743" target="_blank">Milton Duarte</a>
    </p>
 </header>
 
-<section>
+<section class="normal">
     <p>
     Estou ficando cansado <br>
     Da tal tecnologia <br>
@@ -49,7 +91,7 @@
     </p>
 </section>
 
-<section>
+<section class="imagem">
    <p>
     Não é mais como era antes <br>
     É tudo abreviado <br>
@@ -61,7 +103,7 @@
     </p>
 </section>
 
-<section>
+<section class="normal">
     <p>
     Arroba agora não pesa <br>
     É parte de um endereço <br>
@@ -83,7 +125,7 @@
     </p>
 </section>
 
-<section>
+<section class="imagem">
     <p>
     Tenho saudade das cartas <br>
     Escritas com a própria mão <br>
@@ -95,7 +137,7 @@
     </p>
 </section>
 
-<section>
+<section class="normal">
     <p>
     Agora, escrevo e envio <br>
     Chegando na mesma hora <br>
